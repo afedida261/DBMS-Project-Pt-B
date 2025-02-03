@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Query Results</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+<body>
+    <h1>Query 1:</h1>
+    <table border="1" width="40%">
+        <th>App Name</th>
+        <th>Avg Grade</th>
+            {% for data in query1 %}
+                <tr>
+                <td>{{ data.aName }} </td>
+                <td>{{ data.avgRating }} </td>
+                </tr>
+            {% endfor %}
+    </table><br><br>
+
+    <h1>Query 2:</h1>
+    <table border="1" width="40%">
+        <th>Contact Name</th>
+        <th>Contact Phone</th>
+        <th>Leading Apps Num</th>
+            {% for data in query2 %}
+                <tr>
+                <td>{{ data.cName }} </td>
+                <td>{{ data.phone }} </td>
+                <td>{{ data.numLeadingApps }} </td>
+                </tr>
+            {% endfor %}
+    </table><br><br>
+
+    <h1>Query 3:</h1>
+    <table border="1" width="40%">
+        <th>City</th>
+        <th>App Name</th>
+        <th>Installations Num</th>
+            {% for data in query3 %}
+                <tr>
+                <td>{{ data.city }} </td>
+                <td>{{ data.aName }} </td>
+                <td>{{ data.downloadCount }} </td>
+                </tr>
+            {% endfor %}
+    </table><br><br>
+
+    <a href="index">Home</a><br>
+    <a href="add_application">Add Application</a><br>
+    <a href="install_application">Install Application</a><br>
+    <a href="remove_application">Remove Application</a><br>
+</body>
+</html>

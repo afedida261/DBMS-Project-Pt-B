@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Remove Application</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+<body>
+<h1>Remove Application</h1>
+<p>Available Space: {{ available_space }} MB</p>
+
+    {% if message %}
+        <p>{{ message }}</p>
+    {% endif %}
+
+<p>App Name:</p>
+    <form method="post">
+        {% csrf_token %}
+        <!-- Render only the field for the app (no label) -->
+        {{ form.app }}
+        <input type="submit" value="Remove Application">
+    </form>
+
+<br><a href="index">Home</a><br>
+<a href="add_application">Add Application</a><br>
+<a href="install_application">Install Application</a><br>
+<a href="remove_application">Remove Application</a><br>
+</body>
+</html>

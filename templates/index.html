@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DB Project Part B</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <h1>Welcome to the Confused Student Phone's Website</h1>
+    <img src="{% static "duo.png" %}" alt="Duo"/>
+</head>
+<body>
+<br><a href="{% url 'query_results' %}">Query Results</a><br>
+<a href="{% url 'add_application' %}">Add Application</a><br>
+<a href="{% url 'install_application' %}">Install Application</a><br>
+<a href="{% url 'remove_application' %}">Remove Application</a>
+</body>
+</html>

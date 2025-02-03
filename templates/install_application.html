@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Install Application</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+<body>
+<h1>Install Application</h1>
+<p>Available space on phone: {{ available_space }} MB</p>
+
+    {% if message %}
+       <p>{{ message }}</p>
+    {% endif %}
+
+<p>App Name:</p>
+    <form method="post">
+       {% csrf_token %}
+       {{ form.as_p }}
+       <input type="submit" value="Install Application">
+    </form>
+
+<br><a href="{% url 'index' %}">Home</a><br>
+<a href="{% url 'query_results' %}">Query Results</a><br>
+<a href="{% url 'add_application' %}">Add Application</a><br>
+<a href="{% url 'remove_application' %}">Remove Application</a>
+</body>
+</html>

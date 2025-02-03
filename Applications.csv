@@ -1,0 +1,46 @@
+aName,aCategory,aSize,isInstalled
+Facebook,Social,150,TRUE
+WhatsApp,Communication,120,TRUE
+Instagram,Social,140,FALSE
+YouTube,Entertainment,200,FALSE
+Twitter,Social,110,FALSE
+LinkedIn,Business,130,FALSE
+Spotify,Music,180,FALSE
+Zoom,Productivity,95,FALSE
+Microsoft Teams,Productivity,160,FALSE
+Slack,Business,100,FALSE
+Google Maps,Navigation,190,FALSE
+Uber,Travel,175,FALSE
+Airbnb,Travel,150,FALSE
+Google Drive,Productivity,170,FALSE
+Dropbox,Productivity,165,FALSE
+Telegram,Communication,105,FALSE
+Pinterest,Lifestyle,115,TRUE
+Snapchat,Social,125,FALSE
+Reddit,Social,135,FALSE
+Amazon,Shopping,190,FALSE
+eBay,Shopping,160,TRUE
+Google Docs,Productivity,85,FALSE
+Google Sheets,Productivity,90,TRUE
+Notion,Productivity,95,FALSE
+Trello,Productivity,80,TRUE
+Asana,Productivity,85,TRUE
+Google Calendar,Productivity,75,FALSE
+Kindle,Books,150,FALSE
+Duolingo,Education,130,TRUE
+Coursera,Education,140,FALSE
+Udemy,Education,135,FALSE
+Khan Academy,Education,125,TRUE
+Google News,News,100,TRUE
+BBC News,News,95,FALSE
+CNN,News,110,FALSE
+Fitbit,Health,120,FALSE
+MyFitnessPal,Health,130,FALSE
+Google Fit,Health,110,FALSE
+Calm,Health,140,FALSE
+Headspace,Health,135,TRUE
+Shazam,Music,90,FALSE
+Google Photos,Photography,185,FALSE
+Canva,Art,170,TRUE
+Adobe Acrobat Reader,Productivity,150,FALSE
+Google Translate,Tools,85,TRUE
